@@ -8,14 +8,15 @@
 - RAG 流程控制： python 脚本
 - 向量检索（可选）：CLIP + FAISS（如要做大规模图像检索，此版本没得）
 ### 部署结构设计
-  multimodal_rag/
-├── images/                 # 放置待处理的图像
+multimodal_rag/
+├── images/                 # Place your test images here
 │   └── your_image.jpg
-├── docs/                   # 放置文本知识库（可选）
+├── docs/                   # Optional: Place your knowledge base text files here
 │   └── your_doc.txt
-├── rag_runner.py           # RAG 主控制脚本
-├── requirements.txt        # 依赖包
-└── README.md               # 说明
+├── rag_runner.py           # Main RAG runner script
+├── requirements.txt        # Python dependency list
+└── README.md               # Project documentation
+
 ### this version offers requirement.txt
 torch
 transformers
